@@ -11,6 +11,7 @@ RUN apt-get update -qq && apt-get install --yes -qq \
     libfftw3-dev \
     libopenmpi-dev \
     libgsl-dev \
+    libomp-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
