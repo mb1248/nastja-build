@@ -5,6 +5,7 @@ RUN apt-get update -qq && apt-get install --yes -qq \
     cmake \
     clang \
     doxygen \
+    pkgconf \
     libboost-mpi-dev \
     libc++-dev \
     libhdf5-openmpi-dev \
