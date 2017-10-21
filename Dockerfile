@@ -1,11 +1,12 @@
 FROM ubuntu:xenial
 
 RUN apt-get update -qq && apt-get install --yes -qq \
-    git \
     ccache \
     cmake \
     clang \
     doxygen \
+    git \
+    lcov \
     pkgconf \
     libboost-mpi-dev \
     libc++-dev \
