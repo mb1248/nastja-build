@@ -6,6 +6,7 @@ RUN apt-get update -qq && apt-get install --yes -qq \
     clang \
     doxygen \
     git \
+    graphviz \
     lcov \
     pkgconf \
     libboost-mpi-dev \
