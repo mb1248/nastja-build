@@ -8,7 +8,9 @@ RUN apt-get update -qq && apt-get install --yes -qq \
     git \
     graphviz \
     lcov \
+    jq \
     pkgconf \
+    openmpi-bin \
     libboost-mpi-dev \
     libc++-dev \
     libhdf5-openmpi-dev \
