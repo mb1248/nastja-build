@@ -15,6 +15,7 @@ RUN apt-get update -qq && apt-get install --yes -qq \
     libc++-dev \
     libhdf5-openmpi-dev \
     libfftw3-dev \
+    libfltk1.3-dev \
     libopenmpi-dev \
     libgsl-dev \
     libomp-dev \
