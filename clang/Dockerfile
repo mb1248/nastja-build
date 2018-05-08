@@ -1,6 +1,6 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
-RUN apt-get update -qq && apt-get install --yes -qq \
+RUN apt update -qq && apt install --yes -qq \
     ccache \
     cmake \
     clang \
@@ -19,7 +19,7 @@ RUN apt-get update -qq && apt-get install --yes -qq \
     libopenmpi-dev \
     libgsl-dev \
     libomp-dev \
- && apt-get clean \
+ && apt clean \
  && rm -rf /var/lib/apt/lists/*
 
 RUN update-alternatives --set c++ "/usr/bin/clang++"
