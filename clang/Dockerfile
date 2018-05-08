@@ -10,6 +10,7 @@ RUN apt update -qq && apt install --yes -qq \
     lcov \
     jq \
     pkgconf \
+    rsync \
     openmpi-bin \
     libboost-mpi-dev \
     libc++-dev \

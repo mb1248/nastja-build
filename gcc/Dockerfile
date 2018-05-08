@@ -11,6 +11,7 @@ RUN apt update -qq && apt install --yes -qq \
     jq \
     pkgconf \
     openmpi-bin \
+    rsync \
     libc++-dev \
     libhdf5-openmpi-dev \
     libfftw3-dev \
