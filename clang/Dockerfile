@@ -15,6 +15,7 @@ RUN apt update -qq && apt install --yes -qq \
     openmpi-bin \
     libboost-mpi-dev \
     libc++-dev \
+    libc++-7-dev \
     libstdc++6-8-dbg \
     libhdf5-openmpi-dev \
     libfftw3-dev \
