@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 RUN apt update -qq && apt install --yes -qq \
     ccache \
     cmake \
-    clang \
+    clang-7 \
     doxygen \
     git \
     graphviz \
