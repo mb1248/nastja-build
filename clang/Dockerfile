@@ -25,8 +25,8 @@ RUN apt update -qq && apt install --yes -qq \
  && apt clean \
  && rm -rf /var/lib/apt/lists/*
 
-RUN sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-6.0 10
-RUN sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-7 10
+RUN update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-6.0 10
+RUN update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-7 10
 RUN update-alternatives --set clang++ "/usr/bin/clang++-7"
 
 RUN update-alternatives --set c++ "/usr/bin/clang++"
