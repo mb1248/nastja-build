@@ -15,6 +15,7 @@ RUN apt update -qq && apt install --yes -qq \
     pkgconf \
     openmpi-bin \
     rsync \
+    xsltproc \
     libc++-dev \
     libfftw3-dev \
     libfltk1.3-dev \

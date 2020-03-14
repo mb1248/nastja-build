@@ -5,6 +5,7 @@ RUN apt update -qq && apt install --yes -qq \
     git \
     openmpi-bin \
     libopenmpi-dev \
-    jq
+    jq \
+    xsltproc
 
 CMD bin/bash

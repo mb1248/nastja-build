@@ -17,6 +17,7 @@ RUN apt update -qq && apt install --yes -qq \
     pkgconf \
     rsync \
     openmpi-bin \
+    xsltproc \
     libboost-mpi-dev \
     libc++-7-dev \
     libstdc++6-8-dbg \
