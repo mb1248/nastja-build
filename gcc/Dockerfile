@@ -12,10 +12,12 @@ RUN apt update -qq && apt install --yes -qq \
     lcov \
     jq \
     ninja-build \
-    pkgconf \
     openmpi-bin \
+    pkgconf \
+    qpdf \
     rsync \
     xsltproc \
+    xmlstarlet \
     libc++-dev \
     libfftw3-dev \
     libfltk1.3-dev \

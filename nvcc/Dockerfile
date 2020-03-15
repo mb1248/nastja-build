@@ -6,6 +6,7 @@ RUN apt update -qq && apt install --yes -qq \
     openmpi-bin \
     libopenmpi-dev \
     jq \
+    qpdf \
+    xmlstarlet \
     xsltproc
-
 CMD bin/bash

@@ -14,10 +14,12 @@ RUN apt update -qq && apt install --yes -qq \
     llvm-9 \
     ninja-build \
     jq \
-    pkgconf \
-    rsync \
     openmpi-bin \
+    pkgconf \
+    qpdf \
+    rsync \
     xsltproc \
+    xmlstarlet \
     libboost-mpi-dev \
     libc++-7-dev \
     libstdc++6-8-dbg \
