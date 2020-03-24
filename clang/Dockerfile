@@ -27,6 +27,8 @@ RUN apt update -qq && apt install --yes -qq \
     libfltk1.3-dev \
     libopenmpi-dev \
     libomp-dev \
+    python3 \
+    python3-pip \
  && apt clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -35,5 +37,9 @@ RUN update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-7 10
 RUN update-alternatives --set clang++ "/usr/bin/clang++-7"
 
 RUN update-alternatives --set c++ "/usr/bin/clang++"
+
+RUN pip3 install numpy
+RUN pip3 install pandas
+RUN pip3 install numba
 
 CMD bin/bash
