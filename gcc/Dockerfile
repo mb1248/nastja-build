@@ -28,8 +28,10 @@ RUN apt update -qq && apt install --yes -qq \
  && apt clean \
  && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install numpy
-RUN pip3 install pandas
-RUN pip3 install numba
+RUN pip3 install \
+    numpy \
+    pandas \
+    numba \
+    vtk
 
 CMD bin/bash

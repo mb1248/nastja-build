@@ -38,8 +38,10 @@ RUN update-alternatives --set clang++ "/usr/bin/clang++-7"
 
 RUN update-alternatives --set c++ "/usr/bin/clang++"
 
-RUN pip3 install numpy
-RUN pip3 install pandas
-RUN pip3 install numba
+RUN pip3 install \
+    numpy \
+    pandas \
+    numba \
+    vtk
 
 CMD bin/bash
