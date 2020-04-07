@@ -7,7 +7,11 @@ RUN apt update -qq && apt install --yes -qq \
     clang-7 \
     clang-8 \
     clang-9 \
+    curl \
     doxygen \
+    g++ \
+    g++-7 \
+    g++-8 \
     git \
     graphviz \
     lcov \
@@ -18,6 +22,7 @@ RUN apt update -qq && apt install --yes -qq \
     pkgconf \
     qpdf \
     rsync \
+    unzip \
     xsltproc \
     xmlstarlet \
     libboost-mpi-dev \
@@ -31,12 +36,6 @@ RUN apt update -qq && apt install --yes -qq \
     python3-pip \
  && apt clean \
  && rm -rf /var/lib/apt/lists/*
-
-RUN update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-6.0 10
-RUN update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-7 10
-RUN update-alternatives --set clang++ "/usr/bin/clang++-7"
-
-RUN update-alternatives --set c++ "/usr/bin/clang++"
 
 RUN pip3 install \
     numpy \
