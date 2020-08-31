@@ -13,6 +13,8 @@ RUN apt update -qq && apt install --yes -qq \
     clang-7 \
     clang-8 \
     libfftw3-dev \
+    libgl1-mesa-glx \
+    libsm6 \
     python3 \
     python3-pip \
     wget

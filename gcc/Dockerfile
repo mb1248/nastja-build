@@ -23,6 +23,8 @@ RUN apt update -qq && apt install --yes -qq \
     libfltk1.3-dev \
     libopenmpi-dev \
     libomp-dev \
+    libgl1-mesa-glx \
+    libsm6 \
     python3 \
     python3-pip \
  && apt clean \
