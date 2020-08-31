@@ -22,7 +22,7 @@ RUN wget https://github.com/Kitware/CMake/releases/download/v3.15.2/cmake-3.15.2
 && cd cmake-3.15.2 \
 && ./bootstrap \
 && make -j8 \
-&& make install \
+&& make install
 
 RUN pip3 install \
     numpy \
