@@ -31,7 +31,6 @@ RUN apt update -qq && apt install --yes -qq \
 RUN pip3 install \
     numpy \
     pandas \
-    numba \
     vtk
 
 CMD bin/bash
