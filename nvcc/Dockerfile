@@ -17,6 +17,7 @@ RUN apt update -qq && apt install --yes -qq \
     libsm6 \
     python3 \
     python3-pip \
+    python3-venv \
     wget
 
 RUN wget https://github.com/Kitware/CMake/releases/download/v3.15.2/cmake-3.15.2.tar.gz \
