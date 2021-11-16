@@ -1,4 +1,8 @@
-From nvidia/cuda:10.1-devel-ubuntu18.04
+From nvidia/cuda:11.4.2-devel-ubuntu20.04
+
+# configuration to stop tzdata from asking for the location
+RUN export DEBIAN_FRONTEND=noninteractive
+RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 RUN apt update -qq && apt install --yes -qq \
     git \
